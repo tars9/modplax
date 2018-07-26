@@ -1,0 +1,220 @@
+TARS 9
+TARS 9 FREEWARE LICENSE AGREEMENT
+
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT ("LICENSE") CAREFULLY BEFORE USING
+THE TARS 9 SOFTWARE. BY USING THE TARS 9 SOFTWARE, YOU ARE AGREEING TO BE BOUND
+BY THE TERMS OF THIS LICENSE. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE,
+DO NOT USE THE SOFTWARE. IF THE TARS 9 SOFTWARE WAS ACCESSED ELECTRONICALLY,
+CLICK "DISAGREE/DECLINE".
+
+1. General. The software (including all content), documentation and any fonts
+accompanying the software (if any), whether on disk, in read only memory, on any
+other media or in any other form (collectively the "TARS 9 Software") is
+licensed, not sold, to you by TARS Nine ("TARS 9") for use only under the terms
+of this License, and TARS 9 reserves all rights not expressly granted to you.
+You own the media on which the TARS 9 Software is recorded but TARS 9 and/or
+TARS 9's licensor(s) retain ownership of the TARS 9 Software itself. The terms
+of this License will govern any software upgrades provided by TARS 9 that
+replace and/or supplement the original TARS 9 Software, unless such upgrade is
+accompanied by a separate license in which case the terms of that license will
+govern.
+
+2. Free License.
+
+You are granted a non-exclusive License to Use the this Software for any
+purposes for an unlimited period of time.
+
+The software product under this License is provided free of charge. Even though
+a license fee is not paid for the use of such software, it does not mean that
+there are no conditions for using such software.
+
+A. The Software may be installed and used for any legal purpose.
+
+B. The Software may be installed and used on any number of systems.
+
+C. The Software can be copied and distributed under the condition that original
+copyright notice and disclaimer of warranty will stay intact and you will not
+charge money or fees for the Software product, except to cover distribution
+costs.
+
+3. Permitted License Uses and Restrictions.
+
+A. You may not and you agree not to, or to enable others to, copy (except as
+expressly permitted by this License), decompile, reverse engineer, disassemble,
+attempt to derive the source code of, decrypt, modify, or create derivative
+works of the TARS 9 Software or any services provided by the TARS 9 Software, or
+any part thereof (except as and only to the extent any foregoing restriction is
+prohibited by applicable law or to the extent as may be permitted by the
+licensing terms governing use of Open-Sourced Components included with the
+TARS 9 Software). Any attempt to do so is a violation of the rights of TARS 9
+and its licensors of the TARS 9 Software. If you breach this restriction, you
+may be subject to prosecution and damages.
+
+B. TARS 9 has provided, as part of the TARS 9 Software, access to certain third
+party software or services as a convenience. To the extent that the TARS 9
+Software contains, or provides access to, any third party software or services,
+TARS 9 has no express or implied obligation to provide any technical or other
+support for such software or services. Please contact the appropriate software
+vendor, manufacturer or service provider directly for technical support and
+customer service related to its software, service and/ or products.
+
+4. Consent to Use of Data.
+
+A. You agree that TARS 9 and its subsidiaries and agents may collect, maintain,
+process and use diagnostic, technical, usage and related information, including
+but not limited to information about your computer, system and application
+software, and peripherals, that is gathered periodically to facilitate the
+provision of software updates, product support and other services to you (if
+any) related to the TARS 9 Software, and to verify compliance with the terms of
+this License. TARS 9 may use this information, as long as it is in a form that
+does not personally identify you, to provide and improve TARS 9's products and
+services.
+
+5. Services and Third Party Materials.
+
+A. The TARS 9 Software may enable access to TARS 9 and third party services and
+web sites (collectively and individually, "Services"). Such services may not be
+available in all languages or in all countries. Useof these Services requires
+Internet access and use of certain Services may require an user ID provided by
+the service of TARS 9 ("TARS 9 ID"), may require you to accept additional terms
+and may be subject to additional fees. By using this software in connection with
+a TARS 9 ID or other TARS 9 account, you agree to the applicable terms of
+service for that account.
+
+B. You understand that by using any of the Services, you may encounter content
+that may be deemed offensive, indecent, or objectionable, which content may or
+may not be identified as having explicitlanguage, and that the results of any
+search or entering of a particular URL may automatically and unintentionally
+generate links or references to objectionable material. Nevertheless, you agree
+to use the Services at your sole risk and that TARS 9 shall have no liability to
+you for content that may be found to be offensive, indecent, or objectionable.
+
+C. Certain Services may display, include or make available content, data,
+information, applications or materials from third parties ("Third Party
+Materials") or provide links to certain third party web sites. By using the
+Services, you acknowledge and agree that TARS 9 is not responsible for examining
+or evaluating the content, accuracy, completeness, timeliness, validity,
+copyright compliance, legality, decency, quality or any other aspect of such
+Third Party Materials or web sites. TARS 9, its officers, affiliates and
+subsidiaries do not warrant or endorse and do not assume and will not have any
+liability or responsibility to you or any other person for any third-party
+Services, Third Party Materials or web sites, or for any other materials,
+products, or services of third parties. Third Party Materials and links to other
+web sites are provided solely as a convenience to you.
+
+D. You agree that the Services contain proprietary content, information and
+material that is owned by TARS 9 and/or its licensors, and is protected by
+applicable intellectual property and other laws, including but not limited to
+copyright, and that you will not use such proprietary content, information or
+materials in any way whatsoever except for permitted use of the Services or in
+any manner that is inconsistentwith the terms of this License or that infringes
+any intellectual property rights of a third party or TARS 9. No portion of the
+Services may be reproduced in any form or by any means. You agree not to modify,
+rent, lease, loan, sell, distribute, or create derivative works based on the
+Services, in any manner, and you shall not exploit the Services in any
+unauthorized way whatsoever, including but not limited to, using the Services to
+transmit any computer viruses, worms, trojan horses or other malware, or by
+trespass or burdening network capacity. You further agree not to use the
+Services in any manner to harass, abuse, stalk, threaten, defame or otherwise
+infringe or violate the rights of any other party, and that TARS 9 is not in any
+way responsible for any such use by you, nor for any harassing, threatening,
+defamatory, offensive, infringing or illegal messages or transmissions that you
+may receive as a result of using any of the Services.
+
+E. In addition, Services and Third Party Materials that may be accessed from,
+displayed on or linked to from the TARS 9 Software are not available in all
+languages or in all countries. TARS 9 makes no representation that such Services
+and Materials are appropriate or available for use in any particular location.
+To the extent you choose to access such Services or Materials, you do so at your
+own initiative and are responsible for compliance with any applicable laws,
+including but not limited to applicable local laws. TARS 9 and its licensors
+reserve the right to change, suspend, remove, or disable access to any Services
+at any time without notice. In no event will TARS 9 be liable for the removal of
+or disabling of access to any such Services. TARS 9 may also impose limits on
+the use of or access to certain Services, in any case and without notice or
+liability. You acknowledge that neither TARS 9 or its licensors has an express
+or implied obligation to provide, or continue to provide, the Services now or in
+the future.
+
+6. Termination. This License is effective until terminated. Your rights under
+this License will terminate automatically without notice from TARS 9 if you fail
+to comply with any term(s) of this License. Upon the termination of this
+License, you shall cease all use of the TARS 9 Software and destroy all copies,
+full or partial, of the TARS 9 Software. This License shall survive any such
+termination.
+
+7. Disclaimer of Warranties.
+
+A. If you are a customer who is a consumer (someone who uses the TARS 9 Software
+outside of your trade, business or profession), you may have legal rights in
+your country of residence which would prohibit the following limitations from
+applying to you, and where prohibited they will not apply to you. To find out
+more about rights, you should contact a local consumer advice organization.
+
+B. TARS 9 DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE
+TARS 9 SOFTWARE OR SERVICES, THAT THE FUNCTIONS CONTAINED IN THE TARS 9 SOFTWARE
+OR SERVICES WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE TARS 9
+SOFTWARE OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, THAT THE TARS 9
+SOFTWARE OR SERVICES WILL BE COMPATIBLE WITH THIRD PARTY SOFTWARE, OR THAT
+DEFECTS IN THE TARS 9 SOFTWARE OR SERVICES WILL BE CORRECTED.
+
+C. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY TARS 9 OR A TARS 9
+AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE TARS 9 SOFTWARE OR
+SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED
+WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE
+ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.
+
+8. Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY APPLICABLE LAW, IN
+NO EVENT SHALL TARS 9 BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL,
+INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION,
+DAMAGES FOR LOSS OF PROFITS, CORRUPTION OR LOSS OF DATA, BUSINESS INTERRUPTION
+OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE
+OR INABILITY TO USE THE TARS 9 SOFTWARE OR SERVICES, HOWEVER CAUSED, REGARDLESS
+OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF TARS 9 HAS
+BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+9. Export Control. You may not use or otherwise export or reexport the TARS 9
+Software except as authorized by Republic of Korea law and the laws of the
+jurisdiction in which the TARS 9 Software was obtained. In particular, but
+without limitation, the TARS 9 Software may not be exported or re-exported into
+any Republic of Korea embargoed countries. You also agree that you will not use
+the TARS 9 Software for any purposes prohibited by Republic of Korea law.
+
+10. Government End Users. The TARS 9 Software and related documentation are
+"Commercial Items", only as Commercial Items and with only those rights as are
+granted to all other end users pursuant to the terms and conditions herein.
+Unpublished-rights reserved under the copyright laws of the Republic of Korea.
+
+11. Controlling Law and Severability. This License will be governed by and
+construed in accordance with the laws of the Republic of Korea, excluding its
+conflict of law principles. This License shall not be governed by the United
+Nations Convention on Contracts for the International Sale of Goods, the
+application of which is expressly excluded. If you are a consumer based in the
+United Kingdom, this License will be governed by the laws of the jurisdiction of
+your residence. If for any reason a court of competent jurisdiction finds any
+provision, or portion thereof, to be unenforceable, the remainder of this
+License shall continue in full force and effect.
+
+12. Complete Agreement; Governing Language. This License constitutes the entire
+agreement between you and TARS 9 relating to the TARS 9 Software, and supersedes
+all prior or contemporaneous understandings regarding such subject matter. No
+amendment to or modification of this License will be binding unless in writing
+and signed by TARS 9. Any translation of this License is done for local
+requirements and in the event of a dispute between the English and any
+non-English versions in countries other than Korea, the English version of this
+License shall govern, to the extent not prohibited by local law in your
+jurisdiction.
+
+13. Third Party Acknowledgements. Certain components of the TARS 9 Software, and
+third party open source programs included with the TARS 9 Software, may be made
+available by TARS 9 on its open source website ("Open Source Components").
+Acknowledgements, licensing terms and disclaimers for such components are
+contained in the electronic documentation for the TARS 9 Software. Please refer
+to the electronic documentation since you may have additional rights in the Open
+Source Components. You expressly acknowledge that if failure or damage to
+TARS 9 hardware results from modification of the Open Source Components of the
+TARS 9 Software, such failure or damage is excluded from the terms of the TARS 9
+hardware warranty.
+
+7/26/2018
