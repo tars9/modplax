@@ -61,8 +61,8 @@ Features
     </tr>
     <tr>
       <td>
-        ⊛ All components that you install are installed in one directory that
-          you specify without affecting any other existing software.
+        ⊛ All components that you install are installed under the specified
+          installation directory without affecting any other existing software.
       </td>
       <td>
       </td>
