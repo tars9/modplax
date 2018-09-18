@@ -247,8 +247,8 @@ http://localhost in the address bar. You can test the installed application
 server from the Modplax test page.
 
 Note: If you set the HTTP server port to a port other than 80, type
-localhost:\<port>, http://127.0.0.1:\<port> or http://localhost:\<port> in the
-address bar (e.g., localhost:20080).
+`http://localhost:<port>`, `http://127.0.0.1:<port>` or
+`http://localhost:<port>` in the address bar (e.g., http://localhost:20080).
 
 <img src="https://github.com/tars9/modplax/blob/master/docs/images/web/itworks.png" width="600">
 
