@@ -136,7 +136,7 @@ Installation
 
 1. Download the latest release
 
-    [Download the installer file for your platform](https://github.com/tars9/modplax/releases/)
+    Download the installer file for your platform: https://github.com/tars9/modplax/releases/
 
 2. Run the installer.
 
