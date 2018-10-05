@@ -138,7 +138,14 @@ Installation
 
     Download the installer file for your platform: https://github.com/tars9/modplax/releases/
 
+        e.g., modplax-X.X.X.X-windows-x64.zip
+
 2. Run the installer.
+
+    [comment]: <> (Deploy the compressed files of the installer so that the)
+    [comment]: <> (antivirus does not block the installer.)
+    [comment]: <> (e.g., Windows Defender SmartScreen.)
+    Unzip the downloaded archive and run the installer.
 
     Follow the prompts to install TARS 9 Modplax. You'll be asked for the
     following information.
