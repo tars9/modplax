@@ -297,12 +297,12 @@ OPTIONS
         Display help.
 
 CUSTOM INSTALLATION OPTIONS
-    -Dinstall.dir=<val>
+    --install_dir=<val>
         Installation directory.
 
-    -Dcomponents=<all | [val | "val, val..."]>
+    --components=<all | [val | "val, val..."]>
         Specify the components to install. The default is "all".
-        e.g., -Dcomponents="apache, nodejs"
+        e.g., --components="apache, nodejs"
 
         The following components are available for this option:
 
@@ -317,57 +317,57 @@ CUSTOM INSTALLATION OPTIONS
         ror             : Ruby on Rails.
         tomcat          : Apache Tomcat.
 
-    -Dapache.domain_name=<val>
+    --apache_domain_name=<val>
         The domain name of the Apache HTTP Server.
 
-    -Dapache.http.port=<val>
+    --apache_http_port=<val>
         The port of the Apache HTTP Server.
 
     --apache_svc_switch=<true | false>
         A switch for installing the HTTP server as a service.
 
-    -Dtomcat.http.port=<val>
+    --tomcat_http_port=<val>
         The HTTP port of the Apache Tomcat.
 
-    -Dtomcat.shutdown.port=<val>
+    --tomcat_shutdown_port=<val>
         The shutdown port of the Apache Tomcat.
 
-    -Dtomcat.ajp.connector.port=<val>
+    --tomcat_ajp_connector_port=<val>
         The AJP connector port of the Apache Tomcat.
 
-    -Dtomcat.ssl.redirect.port=<val>
+    --tomcat_ssl_redirect_port=<val>
         The SSL redirect port of the Apache Tomcat.
 
     --tomcat_svc_switch=<true | false>
         A switch for installing the Apache Tomcat as a service.
 
-    -Dror.http.port=<val>
+    --ror_http_port=<val>
         The HTTP port of the Ruby on Rails.
 
     --ror_svc_switch=<true | false>
         A switch for installing the Ruby on Rails as a service.
 
-    -Dnodejs.http.port=<val>
+    --nodejs_http_port=<val>
         The HTTP port of the Node.js.
 
     --nodejs_svc_switch=<true | false>
         A switch for installing the Node.js as a service.
 
-    -Dmariadb.datadir=<val>
+    --mariadb_datadir=<val>
         Location of the database storage.
 
     --mariadb_set_root_password=<val>
         Modify password for database user "root".
 
-    -Dmariadb.port=<val> - The port of the MariaDB.
+    --mariadb_port=<val> - The port of the MariaDB.
 
     --mariadb_svc_switch=<true | false>
         A switch for installing the MariaDB as a service.
 
-    -Dcreate.desktop.icon=<true | false>
+    --create_desktop_icon=<true | false>
         If true, create the desktop icons.
 
-    -Dcreate.smprograms.icon=<true | false>
+    --create_smprograms_icon=<true | false>
         If true, create the start menu folder.
 
     --run_at_logon_switch=<true | false>
@@ -471,18 +471,18 @@ COMMANDS
         Restore the configuration to run the installed products.
 
 OPTIONS
-    -Dinstall.dir=<val>
+    --install_dir=<val>
         Installation directory.
 
-    -Dinstalled.dir=<val>
+    --installed_dir=<val>
         Use it when the install directory (install.dir) to set up and the
         directory where the installed package exists are different. The default
         is the directory where the current package is installed.
 
-    -Dapm=<all | all-s | [val | "val, val..."]>
-        Specify installation modules. The default is "all-s". This option is
-        only relevant for the "install" command.
-        e.g., -Dapm="apache, nodejs"
+    --apm_list=<all | all-s | [val | "val, val..."]>
+        Specify the APMs. The default is "all-s". This option is only relevant
+        for the "install" command.
+        e.g., --apm_list="apache, nodejs"
 
         The following modules are available for this option:
 
@@ -499,52 +499,52 @@ OPTIONS
             ror             : Ruby on Rails.
             tomcat          : Apache Tomcat.
 
-    -Dapache.domain.name=<val>
+    --apache_domain_name=<val>
         The domain name of the Apache HTTP Server.
 
-    -Dapache.http.port=<val>
+    --apache_http_port=<val>
         The port of the Apache HTTP Server.
 
-    -Dtomcat.http.port=<val>
+    --tomcat_http_port=<val>
         The HTTP port of the Apache Tomcat.
 
-    -Dtomcat.shutdown.port=<val>
+    --tomcat_shutdown_port=<val>
         The shutdown port of the Apache Tomcat.
 
-    -Dtomcat.ajp.connector.port=<val>
+    --tomcat_ajp_connector_port=<val>
         The AJP connector port of the Apache Tomcat.
 
-    -Dtomcat.ssl.redirect.port=<val>
+    --tomcat_ssl_redirect_port=<val>
         The SSL redirect port of the Apache Tomcat.
 
-    -Dror.http.port=<val>
+    --ror_http_port=<val>
         The HTTP port of the Ruby on Rails.
 
-    -Dnodejs.http.port=<val>
+    --nodejs_http_port=<val>
         The HTTP port of the Node.js.
 
-    -Dmariadb.data.dir=<val>
+    --mariadb_data_dir=<val>
         Location of the database storage.
         This option allows you to set the path of the database files. Actual
         database files is not moved to a new path, you must manually move
         database files to a new path.
 
-    -Dmariadb.port=<val>
+    --mariadb_port=<val>
         The port of the MariaDB.
 
-    -Dsilent.mode=<true | false>
+    --silent_mode=<true | false>
         If true, run in silent mode.
 
-    -Dcreate.desktop.icon=<true | false>
+    --create_desktop_icon=<true | false>
         If true, create the desktop icons.
 
-    -Dcreate.smprograms.icon=<true | false>
+    --create_smprograms_icon=<true | false>
         If true, create the start menu folder.
 
-    -Dtrg.os=<linux | windows>
+    --trg_os=<linux | windows>
         Specify the OS of the package to install. The default is current OS.
 
-    -Dtrg.arch=<x64 | x86>
+    --trg_arch=<x64 | x86>
         Specify the processor architecture of the package to install. Defaults
         to current processor architecture.
 
@@ -553,62 +553,62 @@ OPTIONS
 
 EXAMPLES
     Set the domain name and port of the Apache HTTP Server.
-        setup -Dapache.domain.name=localhost -Dapache.http.port=20080
+        setup --apache_domain_name=localhost --apache_http_port=20080
 
     Set the HTTP port, shutdown port, AJP connector port, and SSL Redirect port
     of the Apache Tomcat.
-        setup -Dtomcat.http.port=28080 -Dtomcat.shutdown.port=28005
-            -Dtomcat.ajp.connector.port=28009 -Dtomcat.ssl.redirect.port=28443
+        setup --tomcat_http_port=28080 --tomcat_shutdown_port=28005
+            --tomcat_ajp_connector_port=28009 --tomcat_ssl_redirect_port=28443
 
     Set the HTTP port of the Ruby on Rails.
-        setup -Dror.http.port=23000
+        setup --ror_http_port=23000
 
     Set the HTTP port of the Node.js.
-        setup -Dnodejs.http.port=23001
+        setup --nodejs_http_port=23001
 
     Set the port of the MariaDB.
-        setup -Dmariadb.port=23306
+        setup --mariadb_port=23306
 
     Change the installation directory.
-        setup -Dinstall.dir="C:\Program Files\Modplax-new"
+        setup --install_dir="C:\Program Files\Modplax-new"
 
 ADVANCED USAGE
     If the installation directory (install.dir) to set up and the directory
     where the installed package exists are different, specify the directory of
-    the installed package using the -Dinstalled.dir option.
-        setup -Dinstalled.dir="C:\Program Files\Modplax-new" [option ...]
+    the installed package using the --installed_dir option.
+        setup --installed_dir="C:\Program Files\Modplax-new" [option ...]
 
-        setup -Dtrg.os=windows -Dtrg.arch=x64 setup
-            -Dinstall.dir="C:\Program Files\Modplax"
-            -Dinstalled.dir="C:\Program Files\Modplax-new"
-            -Dapache.http.port="20080"
-            -Dtomcat.http.port="28080"
-            -Dtomcat.shutdown.port="28005"
-            -Dtomcat.ajp.connector.port="28009"
-            -Dtomcat.ssl.redirect.port="28443"
-            -Dror.http.port="23000"
-            -Dnodejs.http.port="23001"
-            -Dmariadb.port="23306"
-            -Dcreate.desktop.icon="true"
-            -Dcreate.smprograms.icon="true"
-            -Dsilent.mode="true"
+        setup --trg_os=windows --trg_arch=x64 setup
+            --install_dir="C:\Program Files\Modplax"
+            --installed_dir="C:\Program Files\Modplax-new"
+            --apache_http_port="20080"
+            --tomcat_http_port="28080"
+            --tomcat_shutdown_port="28005"
+            --tomcat_ajp_connector_port="28009"
+            --tomcat_ssl_redirect_port="28443"
+            --ror_http_port="23000"
+            --nodejs_http_port="23001"
+            --mariadb_port="23306"
+            --create_desktop_icon="true"
+            --create_smprograms_icon="true"
+            --silent_mode="true"
 
-        setup -Dtrg.os=windows -Dtrg.arch=x64 install
-            -Dinstall.dir="C:\Program Files\Modplax"
-            -Dinstalled.dir="C:\Program Files\Modplax-new"
-            -Dapache.http.port="20080"
+        setup --trg_os=windows --trg_arch=x64 install
+            --install_dir="C:\Program Files\Modplax"
+            --installed_dir="C:\Program Files\Modplax-new"
+            --apache_http_port="20080"
 
     Change the database storage location.
     This option allows you to set the path of the database files. Actual
     database files is not moved to a new path, you must manually move database
     files to a new path.
-        setup -Dmariadb.data.dir="C:\Program Files\Modplax\mariadb-data-new"
+        setup --mariadb_data_dir="C:\Program Files\Modplax\mariadb-data-new"
 
     Revert to the previous settings.
         setup restore
 
     Revert to the previous settings in the specified backup directory.
-        setup restore -Dbackup.dir="backup/yyyy-MM-dd.HHmmss.SSS"
+        setup restore --backup_dir="backup/yyyy-MM-dd.HHmmss.SSS"
 
     Setting up the installation path to the current directory.
         setup reset-inst-path
