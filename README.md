@@ -480,8 +480,8 @@ OPTIONS
         is the directory where the current package is installed.
 
     --apm_list=<all | all-s | [val | "val, val..."]>
-        Specify the APMs. The default is "all-s". This option is only relevant
-        for the "install" command.
+        Specify the APMs. The default is "all-s". This option is only used with
+        the "install" target.
         e.g., --apm_list="apache, nodejs"
 
         The following modules are available for this option:
@@ -668,7 +668,7 @@ Versions of included software
 
 This version of Modplax contains the following software releases:
 
-* Apache Ant 1.9.4
+* Apache Ant 1.9.11
 * Apache HTTP Server 2.4.17
 * Apache Tomcat 8.0.26
 * HeidiSQL 9.3.0.4984
