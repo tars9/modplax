@@ -671,9 +671,9 @@ This version of Modplax contains the following software releases:
 * Apache Ant 1.9.11
 * Apache HTTP Server 2.4.17
 * Apache Tomcat 8.0.26
-* HeidiSQL 9.3.0.4984
+* HeidiSQL 10.1.0.5578
 * JRE 8u60
-* MariaDB 10.0.21
+* MariaDB 10.3.15
 * Node.js 8.11.2
 * PHP 7.2.1
 * Ruby 2.4.1
