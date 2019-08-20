@@ -279,10 +279,10 @@ Open the "Command Prompt":
 ### **Usage of the Modplax installer:**
 
 ```
-SYNOPSIS
-    modplax-XX.exe [option ...]
+☘ SYNOPSIS
+    modplax-<version>-<platform>.exe [option ...]
 
-OPTIONS
+☘ OPTIONS
     -v
         This command will create a verbose log which offers a lot of
         information about the installation.
@@ -296,9 +296,8 @@ OPTIONS
     /?
         Display help.
 
-CUSTOM INSTALLATION OPTIONS
-    --install_dir=<val>
-        Installation directory.
+♞ CUSTOM INSTALLATION OPTIONS
+    --install_dir=<val> - Installation directory.
 
     --components=<all | [val | "val, val..."]>
         Specify the components to install. The default is "all".
@@ -306,72 +305,59 @@ CUSTOM INSTALLATION OPTIONS
 
         The following components are available for this option:
 
-        all             : All modules.
-        ant             : Apache Ant.
-        apache          : Apache HTTP Server.
-        heidisql        : HeidiSQL.
-        java            : Java SE.
-        mariadb         : MariaDB.
-        nodejs          : Node.js.
-        php             : PHP.
-        ror             : Ruby on Rails.
-        tomcat          : Apache Tomcat.
+          all, ant , apache, heidisql, java, mariadb, nodejs, php, ror,
+          tomcat
 
-    --apache_domain_name=<val>
-        The domain name of the Apache HTTP Server.
+    --apache_domain_name=<val> - The domain name of the Apache
+        HTTP Server.
 
-    --apache_http_port=<val>
-        The port of the Apache HTTP Server.
+    --apache_http_port=<val> - The port of the Apache HTTP Server.
 
-    --apache_svc_switch=<true | false>
-        A switch for installing the HTTP server as a service.
+    --apache_svc_switch=<true | false> - A switch for installing the HTTP
+        server as a service.
 
-    --tomcat_http_port=<val>
-        The HTTP port of the Apache Tomcat.
+    --tomcat_http_port=<val> - The HTTP port of the Apache Tomcat.
 
-    --tomcat_shutdown_port=<val>
-        The shutdown port of the Apache Tomcat.
+    --tomcat_shutdown.port=<val> - The shutdown port of the Apache
+        Tomcat.
 
-    --tomcat_ajp_connector_port=<val>
-        The AJP connector port of the Apache Tomcat.
+    --tomcat_ajp_connector_port=<val> - The AJP connector port of the
+        Apache Tomcat.
 
-    --tomcat_ssl_redirect_port=<val>
-        The SSL redirect port of the Apache Tomcat.
+    --tomcat_ssl_redirect_port=<val> - The SSL redirect port of the
+        Apache Tomcat.
 
-    --tomcat_svc_switch=<true | false>
-        A switch for installing the Apache Tomcat as a service.
+    --tomcat_svc_switch=<true | false> - A switch for installing the
+        Apache Tomcat as a service.
 
-    --ror_http_port=<val>
-        The HTTP port of the Ruby on Rails.
+    --ror_http_port=<val> - The HTTP port of the Ruby on Rails.
 
-    --ror_svc_switch=<true | false>
-        A switch for installing the Ruby on Rails as a service.
+    --ror_svc_switch=<true | false> - A switch for installing the Ruby on
+        Rails as a service.
 
-    --nodejs_http_port=<val>
-        The HTTP port of the Node.js.
+    --nodejs_http_port=<val> - The HTTP port of the Node.js.
 
-    --nodejs_svc_switch=<true | false>
-        A switch for installing the Node.js as a service.
+    --nodejs_svc_switch=<true | false> - A switch for installing the
+        Node.js as a service.
 
-    --mariadb_datadir=<val>
-        Location of the database storage.
+    --mariadb_datadir=<val> - Location of the database storage.
 
-    --mariadb_set_root_password=<val>
-        Modify password for database user "root".
+    --mariadb_set_root_password=<val> - Modify password for
+        database user "root".
 
     --mariadb_port=<val> - The port of the MariaDB.
 
-    --mariadb_svc_switch=<true | false>
-        A switch for installing the MariaDB as a service.
+    --mariadb_svc_switch=<true | false> - A switch for installing the
+        MariaDB as a service.
 
-    --create_desktop_icon=<true | false>
-        If true, create the desktop icons.
+    --create_desktop_icon=<true | false> - If true, create the desktop
+        icons.
 
-    --create_smprograms_icon=<true | false>
-        If true, create the start menu folder.
+    --create_smprograms_icon=<true | false> - If true, create the start
+        menu folder.
 
-    --run_at_logon_switch=<true | false>
-        Run TARS 9 Modplax Agent at user logon.
+    --run_at_logon_switch=<true | false> - Run TARS 9 Modplax Agent
+        at user logon.
 ```
 
 Use command-line parameters to uninstall Modplax
@@ -397,10 +383,10 @@ Open the "Command Prompt":
 ### **Usage of the Modplax uninstaller:**
 
 ```
-SYNOPSIS
-    Uninstall.exe [option ...]
+☘ SYNOPSIS
+    modplax-<version>-<platform>.exe [option ...]
 
-OPTIONS
+☘ OPTIONS
     -v
         This command will create a verbose log which offers a lot of
         information about the installation.
@@ -414,12 +400,12 @@ OPTIONS
     /?
         Display help.
 
-CUSTOM INSTALLATION OPTIONS
-    --un_files_completely_removes=<true | false>
-        A switch that completely removes the TARS 9 Modplax.
+♞ CUSTOM INSTALLATION OPTIONS
+    --un_files_completely_removes=<true | false> - A switch that completely
+        removes the TARS 9 Modplax.
 
-    --un_files_data_files=<true | false>
-        A switch that removes the data files in the installation directory.
+    --un_files_data_files=<true | false> - A switch that removes the data
+        files in the installation directory.
 ```
 
 Modplax Agent
@@ -481,10 +467,10 @@ OPTIONS
 
     --apm_list=<all | all-s | [val | "val, val..."]>
         Specify the APMs. The default is "all-s". This option is only used with
-        the "install" target.
-        e.g., --apm_list="apache, nodejs"
+        the "install" command.
+        e.g., setup install --apm_list="apache, nodejs"
 
-        The following modules are available for this option:
+        The following values are available for this option:
 
             all             : All modules.
             all-s           : All modules (silent mode).
@@ -535,18 +521,22 @@ OPTIONS
     --silent_mode=<true | false>
         If true, run in silent mode.
 
-    --create_desktop_icon=<true | false>
-        If true, create the desktop icons.
-
-    --create_smprograms_icon=<true | false>
-        If true, create the start menu folder.
-
     --trg_os=<linux | windows>
         Specify the OS of the package to install. The default is current OS.
 
     --trg_arch=<x64 | x86>
         Specify the processor architecture of the package to install. Defaults
         to current processor architecture.
+
+    --create_desktop_icon=<true | false>
+        If true, create the desktop icons.
+
+    --create_smprograms_icon=<true | false>
+        If true, create the start menu folder.
+
+    -y, --assumeyes
+        Assume yes; assume that the answer to any question which would be asked
+        is yes.
 
     -h
         Display this help and exit.
@@ -576,11 +566,11 @@ ADVANCED USAGE
     If the installation directory (install.dir) to set up and the directory
     where the installed package exists are different, specify the directory of
     the installed package using the --installed_dir option.
-        setup --installed_dir="C:\Program Files\Modplax-new" [option ...]
+        setup --installed_dir="C:\Program Files\Modplax-external" [option ...]
 
         setup --trg_os=windows --trg_arch=x64 setup
-            --install_dir="C:\Program Files\Modplax"
-            --installed_dir="C:\Program Files\Modplax-new"
+            --install_dir="C:\Program Files\Modplax-new"
+            --installed_dir="C:\Program Files\Modplax-external"
             --apache_http_port="20080"
             --tomcat_http_port="28080"
             --tomcat_shutdown_port="28005"
@@ -594,8 +584,8 @@ ADVANCED USAGE
             --silent_mode="true"
 
         setup --trg_os=windows --trg_arch=x64 install
-            --install_dir="C:\Program Files\Modplax"
-            --installed_dir="C:\Program Files\Modplax-new"
+            --install_dir="C:\Program Files\Modplax-new"
+            --installed_dir="C:\Program Files\Modplax-external"
             --apache_http_port="20080"
 
     Change the database storage location.
@@ -608,10 +598,13 @@ ADVANCED USAGE
         setup restore
 
     Revert to the previous settings in the specified backup directory.
-        setup restore --backup_dir="backup/yyyy-MM-dd.HHmmss.SSS"
+        setup restore --backup_dir="backup/yyyyMMdd.HHmmss.SSS"
 
     Setting up the installation path to the current directory.
         setup reset-inst-path
+
+    Install additional files and configure the installed products.
+        setup install -Dinstall.dir="C:\Program Files\Modplax-new" [option ...]
 ```
 
 Server management commands
