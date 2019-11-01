@@ -265,12 +265,17 @@ Use command-line parameters to install Modplax
 All options you specify in the Modplax installer GUI can be specified as
 command-line parameters.
 
-To install using command-line parameters, run the Modplax installer with the
-parameters within the "Command Prompt".
+To install using command line parameters, run the Modplax installer from the
+"Command Prompt".
 
 Open the "Command Prompt":
 
     Press Windows Key + R, type "cmd" into the Run dialog, and press Enter.
+
+Run the following command:
+
+    cd /d "<installer location>"
+    modplax-<version>-<platform>.exe [option ...]
 
 > Note: Modplax supports silent install. Silent install mode does not display
   any interactive interface. To install in silent mode, run the installer with
@@ -278,6 +283,7 @@ Open the "Command Prompt":
 
 ### **Usage of the Modplax installer:**
 
+[comment]: <> (Last modified date that copied the usage of the installer: 2019-09-27)
 ```
 ☘ SYNOPSIS
     modplax-<version>-<platform>.exe [option ...]
@@ -340,7 +346,7 @@ Open the "Command Prompt":
     --nodejs_svc_switch=<true | false> - A switch for installing the
         Node.js as a service.
 
-    --mariadb_datadir=<val> - Location of the database storage.
+    --mariadb_data_dir=<val> - Location of the database storage.
 
     --mariadb_set_root_password=<val> - Modify password for
         database user "root".
@@ -369,12 +375,17 @@ command-line parameters.
 > Note: The Modplax uninstaller "Uninstall.exe" is located in the installation
   directory.
 
-To uninstall using command-line parameters, run the Modplax uninstall with the
-parameters within the "Command Prompt".
+To uninstall using command line parameters, run the Modplax uninstaller
+(Uninstall.exe) from the "Command Prompt".
 
 Open the "Command Prompt":
 
     Press Windows Key + R, type "cmd" into the Run dialog, and press Enter.
+
+Run the following command:
+
+    cd /d "<installed directory>"
+    Uninstall.exe [option ...]
 
 > Note: Modplax supports silent uninstall. Silent uninstall mode does not
   display any interactive interface. To uninstall in silent mode, run the
@@ -382,9 +393,10 @@ Open the "Command Prompt":
 
 ### **Usage of the Modplax uninstaller:**
 
+[comment]: <> (Last modified date that copied the usage of the uninstaller: 2019-09-27)
 ```
 ☘ SYNOPSIS
-    modplax-<version>-<platform>.exe [option ...]
+    Uninstall.exe [option ...]
 
 ☘ OPTIONS
     -v
@@ -424,20 +436,38 @@ stop each server in the following order:
 * Stop all servers
     > Apache HTTP Server → Apache Tomcat → Ruby on Rails → Node.js → MariaDB
 
-Customize the settings of installed servers
--------------------------------------------
+Change the settings of the installed servers
+--------------------------------------------
 
-Modplax provides a "setup" configuration tool that allows you to change the
-settings of each component after installation.
+Modplax provides a setup tool that allows you to change the settings of servers
+even after installation.
 
-> Note: "setup" is located in the setup directory of the installation directory.
+To change the settings of the installed servers, run the setup tool from the
+"Command Prompt".
 
+Open the "Command Prompt":
+
+    Press Windows Key + R, type "cmd" into the Run dialog, and press Enter.
+
+Run the following command:
+
+    cd /d "<installed directory>\setup"
+    setup [command ...] [option ...]
+
+To display help information for the setup tool, enter the following command:
+
+    setup -h
+
+> Note: The setup tool is located in the "setup" directory of the installation
+  directory.
+
+[comment]: <> (Last modified date that copied the usage of the setup tool: 2019-10-08)
 ```
 NAME
     setup - Set up the environment of the Modplax.
 
 SYNOPSIS
-    setup [command ...] [option ...]
+    setup [command] [option ...]
 
 DESCRIPTION
     Set up the environment of the Modplax.
@@ -450,24 +480,32 @@ COMMANDS
         Install Application Platform Module (APM) and configure the installed
         products.
 
-    reset-inst-path
-        Setting up the installation path to the current directory.
+    update
+        Update Application Platform Module (APM).
 
     restore
         Restore the configuration to run the installed products.
 
 OPTIONS
+    --trg_arch=<x64 | x86>
+        Specify the processor architecture of the package to install. Defaults
+        to current processor architecture.
+
     --install_dir=<val>
-        Installation directory.
+        Installation directory to be set in the configuration files. The default
+        is the directory where the current package is installed.
+
+        Specify this option if you have moved installed packages to another
+        location.
 
     --installed_dir=<val>
-        Use it when the install directory (install.dir) to set up and the
-        directory where the installed package exists are different. The default
-        is the directory where the current package is installed.
+        Use it when the install directory to set up and the directory where the
+        installed package exists are different. The default is the directory
+        where the current package is installed.
 
     --apm_list=<all | all-s | [val | "val, val..."]>
         Specify the APMs. The default is "all-s". This option is only used with
-        the "install" command.
+        the "install" and "update" command.
         e.g., setup install --apm_list="apache, nodejs"
 
         The following values are available for this option:
@@ -484,6 +522,12 @@ OPTIONS
             php             : PHP.
             ror             : Ruby on Rails.
             tomcat          : Apache Tomcat.
+
+        By default, Update overwrites existing modules with newer versions of
+        the files. For the following modules, if the module already exists
+        during the update, the module is removed and installed:
+
+          ant, heidisql, java, jreext, php
 
     --apache_domain_name=<val>
         The domain name of the Apache HTTP Server.
@@ -510,23 +554,19 @@ OPTIONS
         The HTTP port of the Node.js.
 
     --mariadb_data_dir=<val>
-        Location of the database storage.
-        This option allows you to set the path of the database files. Actual
-        database files is not moved to a new path, you must manually move
-        database files to a new path.
+        Location of the database storage. This option allows you to set the data
+        path for the database.
+
+        CAUTION: If you set up using this option after installation, the
+        database files will not be moved to the new path. Move the database
+        files manually.
 
     --mariadb_port=<val>
         The port of the MariaDB.
 
-    --silent_mode=<true | false>
-        If true, run in silent mode.
-
-    --trg_os=<linux | windows>
-        Specify the OS of the package to install. The default is current OS.
-
-    --trg_arch=<x64 | x86>
-        Specify the processor architecture of the package to install. Defaults
-        to current processor architecture.
+    -y, --assumeyes
+        Assume yes; assume that the answer to any question which would be asked
+        is yes.
 
     --create_desktop_icon=<true | false>
         If true, create the desktop icons.
@@ -534,14 +574,17 @@ OPTIONS
     --create_smprograms_icon=<true | false>
         If true, create the start menu folder.
 
-    -y, --assumeyes
-        Assume yes; assume that the answer to any question which would be asked
-        is yes.
-
     -h
         Display this help and exit.
 
 EXAMPLES
+    Install Application Platform Module (APM) and configure the installed
+    products.
+        setup install [option ...]
+
+    Update Application Platform Module (APM).
+        setup update [option ...]
+
     Set the domain name and port of the Apache HTTP Server.
         setup --apache_domain_name=localhost --apache_http_port=20080
 
@@ -559,17 +602,18 @@ EXAMPLES
     Set the port of the MariaDB.
         setup --mariadb_port=23306
 
-    Change the installation directory.
+    If you moved the installed package to another location, reconfigure the
+    installation directory.
         setup --install_dir="C:\Program Files\Modplax-new"
 
 ADVANCED USAGE
-    If the installation directory (install.dir) to set up and the directory
-    where the installed package exists are different, specify the directory of
-    the installed package using the --installed_dir option.
-        setup --installed_dir="C:\Program Files\Modplax-external" [option ...]
+    If the installation directory to set up and the directory where the
+    installed package exists are different, specify the directory of the
+    installed package using the --installed_dir option.
+        setup [command] --installed_dir="C:\Program Files\Modplax-external" [option ...]
+            [option ...]
 
-        setup --trg_os=windows --trg_arch=x64 setup
-            --install_dir="C:\Program Files\Modplax-new"
+        setup --trg_arch=x64
             --installed_dir="C:\Program Files\Modplax-external"
             --apache_http_port="20080"
             --tomcat_http_port="28080"
@@ -581,30 +625,20 @@ ADVANCED USAGE
             --mariadb_port="23306"
             --create_desktop_icon="true"
             --create_smprograms_icon="true"
-            --silent_mode="true"
-
-        setup --trg_os=windows --trg_arch=x64 install
-            --install_dir="C:\Program Files\Modplax-new"
-            --installed_dir="C:\Program Files\Modplax-external"
-            --apache_http_port="20080"
+            -y
 
     Change the database storage location.
-    This option allows you to set the path of the database files. Actual
-    database files is not moved to a new path, you must manually move database
-    files to a new path.
         setup --mariadb_data_dir="C:\Program Files\Modplax\mariadb-data-new"
+
+        CAUTION: If you set up using this option after installation, the
+        database files will not be moved to the new path. Move the database
+        files manually.
 
     Revert to the previous settings.
         setup restore
 
     Revert to the previous settings in the specified backup directory.
         setup restore --backup_dir="backup/yyyyMMdd.HHmmss.SSS"
-
-    Setting up the installation path to the current directory.
-        setup reset-inst-path
-
-    Install additional files and configure the installed products.
-        setup install -Dinstall.dir="C:\Program Files\Modplax-new" [option ...]
 ```
 
 Server management commands
