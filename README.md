@@ -610,7 +610,7 @@ ADVANCED USAGE
     If the installation directory to set up and the directory where the
     installed package exists are different, specify the directory of the
     installed package using the --installed_dir option.
-        setup [command] --installed_dir="C:\Program Files\Modplax-external" [option ...]
+        setup [command] --installed_dir="C:\Program Files\Modplax-external"
             [option ...]
 
         setup --trg_arch=x64
