@@ -742,8 +742,6 @@ Creators
 
 **Dongwoon Kim**
 
-- <dongwoonkm@gmail.com>
-
 Copyright
 ---------
 
